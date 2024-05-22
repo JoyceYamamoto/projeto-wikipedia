@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicas de Leitura</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+content {
+    max-width: 1440px;
+    margin: auto;
+    grid-gap: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+    header {
+        background-color: #333;
+        color: #0a0808;
+        padding: 15px 0;
+        text-align: center;
+    }
+    nav {
+        background-color: #444;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+    }
+    nav a {
+        color: #131010;
+        margin: 0 15px;
+        text-decoration: none;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+    main {
+        padding: 20px;
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #f0ecec;
+        box-shadow: 0 0 10px rgba(160, 15, 15, 0.1);
+    }
+    .footer {
+    min-height: 100px;
+    border-top: solid 1px #cdcdcd;
+}
+    h1, h2 {
+        color: #d817a8;
+    }
+    .book-tip {
+        margin-bottom: 20px;
+    }
+    .book-tip h2 {
+        margin-top: 0;
+        color: #a95add;
+    }
+    .book-tip p {
+        margin: 0;
+        color: #05010a;
+    }
+    .progress-container {
+            margin-top: 10px;
+        }
+        picture img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+         .links a:hover {
+            text-decoration: underline;
+        }
+        form input[type="submit"]:hover {
+            background-color: #052c07;
+        }
+        figure {
+    text-align: center;
+}
+        
+</style>
+
+<body>
+
+    <header>   
+        <h1>Só Para Leitores</h1>
+
+        <header class="Dicas de Leitura">
+            <figure>
+                <img src="dicas.jpg" width="700">
+                <figcaption> <p>Dicas de Leitura</p></figcaption>
+            </figure>
+        </header>
+        <nav>
+            <a href="#home">Início</a>
+            <a href="#dicas">Dicas de Leitura</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+        <h1>Bem-vindo ao Nosso Site!</h1>
+        <p>Esta página é dedicada a todos os amantes da leitura.</p>
+     <main>
+        <section class="book-tip">
+            <h2>Livro 1: <mark> As Crônicas de Nárnia</mark></h2>
+            <p>Autor:<i> C. S. Lewis</i> </p>
+            <p>Descrição: As Crônicas de Nárnia apresentam, geralmente, as aventuras de crianças que desempenham um papel central e descobrem o ficcional Reino de Nárnia, um lugar onde a magia é corriqueira, os animais falam, e ocorrem batalhas entre o bem e o mal. Em todos os livros (com exceção de "O Cavalo e seu Menino") os personagens principais são crianças do nosso mundo (A Terra), que são magicamente transportadas para Nárnia a fim de serem ajudadas e instruídas pelo Grande Leão conhecido como Aslam (ou Aslan, dependendo da tradução).</p>
+            <picture>
+                <source srcset="ascronicasdenarnia.jpg" media="(max-width: 600px)">
+                <source srcset="ascronicasdenarnia.jpg" media="(max-width: 1200px)">
+                <img src="ascronicasdenarnia.jpg" alt="Capa do Livro 1: As Crônicas de Nárnia" width="250">
+            </picture>
+            <div class="progress-container">
+                <label for="progress1">Progresso de leitura:</label>
+                <progress id="progress1" value="30" max="100"></progress> 30%
+            </div>
+        </section>
+        <section class="book-tip">
+            <h2>Livro 2: <mark>Alice no País das Maravilhas</mark> </h2>
+            <p>Autor: <i>Charles Lutwidge Dodgson</i></p>
+            <p>Descrição: O livro conta a história de uma menina chamada Alice que cai numa toca de coelho que a transporta para um lugar fantástico povoado por criaturas peculiares e antropomórficas, revelando uma lógica do absurdo, característica dos sonhos. Este está repleto de alusões satíricas dirigidas tanto aos amigos como aos inimigos de Carroll, de paródias a poemas populares infantis ingleses ensinados no século XIX e também de referências linguísticas e matemáticas frequentemente através de enigmas que contribuíram para a sua popularidade. É assim uma obra de difícil interpretação pois contém dois livros num só texto: um para crianças e outro para adultos.</p>
+            <picture>
+                <source srcset="alicenopaisdasmaravilhas.jpg" media="(max-width: 600px)">
+                <source srcset="alicenopaisdasmaravilhas.jpg" media="(max-width: 1200px)">
+                <img src="alicenopaisdasmaravilhas.jpg" alt="Capa do Livro 2: Alice no País das Maravilhas" width="250">
+            </picture>
+            <div class="progress-container">
+                <label for="progress2">Progresso de leitura:</label>
+                <progress id="progress2" value="50" max="100"></progress> 50%
+            </div>
+        </section>
+        <section class="book-tip">
+            <h2>Livro 3: <mark>O Pequeno Príncipe</mark></h2>
+            <p>Autor: <i>Antoine de Saint-Exupéry</i> </p>
+            <p>Descrição:A história começa com o narrador descrevendo suas recordações, em que aos 6 anos de idade fez um desenho de uma jiboia que havia engolido um elefante. Quando perguntava o que os adultos viam em seu desenho, todos eles achavam que o garoto havia desenhado um chapéu. Ao corrigir as pessoas sobre seu desenho, era sempre respondido que precisava de um hobby mais sério e maduro. O narrador então lamenta a falta de criatividade demonstrada pelos adultos.</p>
+            <picture>
+                <source srcset="opequenoprincipe.jpg" media="(max-width: 600px)">
+                <source srcset="op.jpg" media="(max-width: 1200px)">
+                <img src="opequenoprincipe.jpg" alt="Capa do Livro 3: O Pequeno Príncipe" width="250">
+            </picture>
+            <div class="progress-container">
+                <label for="progress3">Progresso de leitura:</label>
+                <progress id="progress3" value="70" max="100"></progress> 70%
+            </div>
+            <div class="links">
+               <p>Links úteis:</p>
+                <ul>
+                    <li><a href="https://pt.wikipedia.org/wiki/The_Chronicles_of_Narnia" target="_blank">Sobre o livro As Crônicas de Nárnia na wikipedia</a></li>
+                    <li><a href="https://pt.wikipedia.org/wiki/Alice_no_Pa%C3%ADs_das_Maravilhas" target="_blank">Sobre o livro Alice no País das Maravilhas na wikipedia</a></li>
+                    <li><a href="https://pt.wikipedia.org/wiki/Le_Petit_Prince" target="_blank">Sobre o livro o Pequeno Príncipe na wikipedia</a></li>
+                </ul>
+            </div>
+            <section id="contato">
+                <h2>Entre em Contato</h2>
+                    <form action="#" method="post">
+                        <label for="name"><p>Nome:</p></label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email"><p>Email:</p></label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message"> <p>Mensagem:</p></label>
+                        <textarea id="message" name="message" required></textarea>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </form>
+        </section>
+        <section id="contato">
+            <h2>Assista a este vídeo sobre a importância da leitura:</h2>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KW4sZROK5hU" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Dicas de Leitura. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
